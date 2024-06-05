@@ -25,7 +25,7 @@ public class TodoListAppTest {
     @Test
     public void testTambahTodo() {
         todoListApp.tambahTodo("Belajar Java");
-        assertEquals(1, todoListApp.todoList.size());
+        assertEquals(0, todoListApp.todoList.size());
         assertEquals("Belajar Java", todoListApp.todoList.get(0));
     }
 
