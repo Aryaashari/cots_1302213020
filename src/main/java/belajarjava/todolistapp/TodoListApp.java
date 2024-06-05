@@ -3,7 +3,6 @@
  */
 package belajarjava.todolistapp;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**

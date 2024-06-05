@@ -1,22 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package belajarjava.todolistapp;
+package belajarjava;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author aryaa
- */
-public class TodoList {
+public class TodoList2 {
     public ArrayList<String> todoList = new ArrayList<>();
 
     public int getCountTodo() {
         return todoList.size();
     }
-    
+
     public void tambahTodo(String todo) {
         todoList.add(todo);
         System.out.println("Todo berhasil ditambahkan!");
@@ -35,11 +27,11 @@ public class TodoList {
 
     public void hapusTodo(int index) {
         if (index > 0 && index <= todoList.size()) {
-                todoList.remove(index - 1);
-                System.out.println("Todo berhasil dihapus!");
-            } else {
-                System.out.println("Nomor todo tidak valid.");
-            }
-        
+            todoList.remove(index - 1);
+            System.out.println("Todo berhasil dihapus!");
+        } else {
+            System.out.println("Nomor todo tidak valid.");
+        }
+
     }
 }
